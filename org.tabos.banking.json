@@ -52,8 +52,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/tabos/banking.git",
-                    "tag" : "0.2.2",
-                    "commit" : "f16b2199ec291b4cd71d6f1fe394068ed1ae231e"
+                    "tag" : "0.2.3",
+                    "commit" : "ad43ebf6b5a42a766fe883d49750073924744055"
                 }
             ]
         }
