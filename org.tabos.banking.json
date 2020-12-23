@@ -39,11 +39,11 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
-                    "branch" : "1.0.0"
+                    "commit" : "385be40e733a3503fb854cf08022866fced5d0eb"
                 }
             ]
         },
-        "python3-modules.json",
+        "python3-requirements.json",
         {
             "name" : "banking",
             "builddir" : true,
@@ -52,8 +52,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/tabos/banking.git",
-                    "tag" : "0.2.4",
-                    "commit" : "5282d78c109587a82c3c9ae752bf38429866603f"
+                    "tag" : "0.3.0",
+                    "commit" : "de5fa7d25e122a42254f4020174022a79af6fce8"
                 }
             ]
         }

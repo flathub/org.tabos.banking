@@ -1,0 +1,139 @@
+{
+    "name": "python3-requirements",
+    "buildsystem": "simple",
+    "build-commands": [],
+    "modules": [
+        {
+            "name": "python3-fints",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"fints\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/29/b7/c191fcd07dba526d650f55ec5ab166ec7f9a791c3555fb3d2bbb071bf939/elementpath-2.0.5-py3-none-any.whl",
+                    "sha256": "1dd545ed17692f903cc2d90ce721f924a5e8d657ad8b9ff639cd4512c633010b"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl",
+                    "sha256": "ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d7/7a/e773fa253c43c45ab9a6e9d47c0512a5176737278d5b83d790adcd5cac1d/xmlschema-1.4.0-py3-none-any.whl",
+                    "sha256": "49824744438b0a082f3e50c6930e3b2a032d930a2c25840d8316e4cab79f39d6"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl",
+                    "sha256": "1311f10e8b895935241623731c2ba64f4c455287888b18189350b67134a822e8"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/5e/a0/5f06e1e1d463903cf0c0eebeb751791119ed7a4b3737fdc9a77f1cdfb51f/certifi-2020.12.5-py2.py3-none-any.whl",
+                    "sha256": "719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl",
+                    "sha256": "b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f5/71/45d36a8df68f3ebb098d6861b2c017f3d094538c0fb98fa61d4dc43e69b9/urllib3-1.26.2-py2.py3-none-any.whl",
+                    "sha256": "d8ff90d979214d7b4f8ce956e80f4028fc6860e4431f731ea4a8c08f23f99473"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl",
+                    "sha256": "f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl",
+                    "sha256": "8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl",
+                    "sha256": "a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/b1/a7/588bfa063e7763247ab6f7e1d994e331b85e0e7d09f853c59a6eb9696974/packaging-20.8-py2.py3-none-any.whl",
+                    "sha256": "24e0da08660a87484d1602c30bb4902d74816b6985b93de36926f5bc95741858"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f2/7b/84f5fe22d7d9644a5f315127659631eafff3c784202ab4e179bd724a8900/mt_940-4.23.0-py2.py3-none-any.whl",
+                    "sha256": "1f727184a12a8f289310620d9a7fbdda2737c396fb5abb356838a7d2823359b0"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/4e/1b/20185a15c207a05bccd293254a6770974b91dfc0f06248e8a17942918cb7/sepaxml-2.3.0-py3-none-any.whl",
+                    "sha256": "a95c1326850c35b4b7d90f7a0f86ced798a74dc1c2f96bd9fe891a443807fdff"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl",
+                    "sha256": "c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/03/c8/b7ed0dfea5cb287907bd22c5ff7c3ed0a65b346f2a4cf916eb9e83be66b3/bleach-3.2.1-py2.py3-none-any.whl",
+                    "sha256": "9f8ccbeb6183c6e6cddea37592dfb0167485c1e3b13b3363bc325aa8bda3adbd"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/02/22/7977fd70389ef967fa84f4361747d0769fce5c29f9ff0a3ca4db0d91186d/fints-3.0.1-py3-none-any.whl",
+                    "sha256": "c3889f57fd6bedcefd09b34a6e8d40a6e7b6177088435ed618050655600af53d"
+                }
+            ]
+        },
+        {
+            "name": "python3-mt940",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"mt940\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/bf/fd/7fb7b4668d63f9bf93676b8a6bf18467bdf5295cdcada73e860d549bc193/mt940-0.5.0-py3-none-any.whl",
+                    "sha256": "18c650edadd8b56c233bacbc42f1125a71dbded59987b366a86637fa2ceed602"
+                }
+            ]
+        },
+        {
+            "name": "python3-cryptography",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"cryptography\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ae/e7/d9c3a176ca4b02024debf82342dab36efadfc5776f9c8db077e8f6e71821/pycparser-2.20-py2.py3-none-any.whl",
+                    "sha256": "7582ad22678f0fcd81102833f60ef8d0e57288b6b5fb00323d101be910e35705"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl",
+                    "sha256": "8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/66/6a/98e023b3d11537a5521902ac6b50db470c826c682be6a8c661549cb7717a/cffi-1.14.4.tar.gz",
+                    "sha256": "1a465cbe98a7fd391d47dce4b8f7e5b921e6cd805ef421d04f5f66ba8f06086c"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/b7/82/f7a4ddc1af185936c1e4fa000942ffa8fb2d98cff26b75afa7b3c63391c4/cryptography-3.3.1.tar.gz",
+                    "sha256": "7e177e4bea2de937a584b13645cab32f25e3d96fc0bc4a4cf99c27dc77682be6"
+                }
+            ]
+        }
+    ]
+}
