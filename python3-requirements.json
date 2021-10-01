@@ -143,7 +143,7 @@
             "name": "python3-cryptography",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"cryptography\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"cryptography==3.3.2\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -158,8 +158,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/10/91/90b8d4cd611ac2aa526290ae4b4285aa5ea57ee191c63c2f3d04170d7683/cryptography-35.0.0.tar.gz",
-                    "sha256": "9933f28f70d0517686bd7de36166dda42094eac49415459d9bdf5e7df3e0086d"
+                    "url": "https://files.pythonhosted.org/packages/d4/85/38715448253404186029c575d559879912eb8a1c5d16ad9f25d35f7c4f4c/cryptography-3.3.2.tar.gz",
+                    "sha256": "5a60d3780149e13b7a6ff7ad6526b38846354d11a15e21068e57073e29e19bed"
                 }
             ]
         }
