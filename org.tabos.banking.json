@@ -1,7 +1,7 @@
 {
     "app-id" : "org.tabos.banking",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.38",
+    "runtime-version" : "41",
     "sdk" : "org.gnome.Sdk",
     "command" : "banking",
     "finish-args" : [
@@ -9,7 +9,8 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--talk-name=org.freedesktop.secrets"
+        "--talk-name=org.freedesktop.secrets",
+        "--device=dri"
     ],
     "cleanup" : [
         "/include",
@@ -24,22 +25,39 @@
     ],
     "modules" : [
         {
-            "name" : "libhandy",
+            "name" : "libsass",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/lazka/libsass.git",
+                    "branch" : "meson"
+                }
+            ]
+        },
+        {
+            "name" : "sassc",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/lazka/sassc.git",
+                    "branch" : "meson"
+                }
+            ]
+        },
+        {
+            "name" : "libadwaita",
             "buildsystem" : "meson",
             "config-opts" : [
-                "-Dprofiling=false",
-                "-Dintrospection=enabled",
-                "-Dgtk_doc=false",
                 "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false",
-                "-Dglade_catalog=disabled"
+                "-Dexamples=false"
             ],
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
-                    "commit" : "385be40e733a3503fb854cf08022866fced5d0eb"
+                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "branch" : "main"
                 }
             ]
         },
@@ -52,8 +70,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/tabos/banking.git",
-                    "tag" : "0.3.0",
-                    "commit" : "de5fa7d25e122a42254f4020174022a79af6fce8"
+                    "tag" : "0.4.0",
+                    "commit" : "acda95e45d015033021f91e8f6134551eac993f1"
                 }
             ]
         }
