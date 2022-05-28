@@ -4,124 +4,76 @@
     "build-commands": [],
     "modules": [
         {
-            "name": "python3-semantic_version",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"semantic_version\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d4/52/3be868c7ed1f408cb822bc92ce17ffe4e97d11c42caafce0589f05844dd0/semantic_version-2.8.5.tar.gz",
-                    "sha256": "d2cb2de0558762934679b9a104e82eca7af448c9f4974d1f3eeccff651df8a54"
-                }
-            ]
-        },
-        {
-            "name": "python3-setuptools-rust",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"setuptools-rust\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/be/ba/1f744cdc819428fc6b5084ec34d9b30660f6f9daaf70eead706e3203ec3c/toml-0.10.2.tar.gz",
-                    "sha256": "b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d4/52/3be868c7ed1f408cb822bc92ce17ffe4e97d11c42caafce0589f05844dd0/semantic_version-2.8.5.tar.gz",
-                    "sha256": "d2cb2de0558762934679b9a104e82eca7af448c9f4974d1f3eeccff651df8a54"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/12/22/6ba3031e7cbd6eb002e13ffc7397e136df95813b6a2bd71ece52a8f89613/setuptools-rust-0.12.1.tar.gz",
-                    "sha256": "647009e924f0ae439c7f3e0141a184a69ad247ecb9044c511dabde232d3d570e"
-                }
-            ]
-        },
-        {
             "name": "python3-fints",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"fints\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"fints\""
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/11/cc/9eb978f246b1fd3fb8cc599734a18108693ffd91ccaf9d4c6312c67b3bf3/elementpath-2.3.2.tar.gz",
-                    "sha256": "392f32a5efdf15c14f3f56ef8422364f8b0a74a12f51a66d9c903c172fe3594b"
+                    "url": "https://files.pythonhosted.org/packages/db/6b/f07db68acbb0b38f031181d7863adac792941a27dbc453135efb8c16e9fe/elementpath-2.5.1-py3-none-any.whl",
+                    "sha256": "1f41f1160aaae66bc25a8cb9451e5b31ca4553b6dccd9b57045205b005e5406e"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/8f/a0/f835474eed1ff6e3cbfb3bbb1f3315daa3763e2c99fe025987ad03870038/xmlschema-1.8.0.tar.gz",
-                    "sha256": "fa4e22a708f08d15f605c9191e2500149ba1a848fff7fa4904c2f2c57dc1087f"
+                    "url": "https://files.pythonhosted.org/packages/3a/f6/7a8fd7cc072cab26196f9f87b2869f4aa2cb7ca6162a3177f03f95f69f9d/xmlschema-1.10.0-py3-none-any.whl",
+                    "sha256": "dbd68bded2fef00c19cf37110ca0565eca34cf0b6c9e1d3b62ad0de8cbb582ca"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0b/02/ae6ceac1baeda530866a85075641cec12989bd8d31af6d5ab4a3e8c92f47/webencodings-0.5.1.tar.gz",
-                    "sha256": "b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"
+                    "url": "https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl",
+                    "sha256": "a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ab/e2/e9a00f0ccb71718418230718b3d900e71a5d16e701a3dae079a21e9cd8f8/text-unidecode-1.3.tar.gz",
-                    "sha256": "bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"
+                    "url": "https://files.pythonhosted.org/packages/a6/a5/c0b6468d3824fe3fde30dbb5e1f687b291608f9473681bbf7dabbf5a87d7/text_unidecode-1.3-py2.py3-none-any.whl",
+                    "sha256": "1311f10e8b895935241623731c2ba64f4c455287888b18189350b67134a822e8"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz",
-                    "sha256": "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
+                    "url": "https://files.pythonhosted.org/packages/ec/03/062e6444ce4baf1eac17a6a0ebfe36bb1ad05e1df0e20b110de59c278498/urllib3-1.26.9-py2.py3-none-any.whl",
+                    "sha256": "44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/cb/38/4c4d00ddfa48abe616d7e572e02a04273603db446975ab46bbcd36552005/idna-3.2.tar.gz",
-                    "sha256": "467fbad99067910785144ce333826c71fb0e63a425657295239737f7ecd125f3"
+                    "url": "https://files.pythonhosted.org/packages/04/a2/d918dcd22354d8958fe113e1a3630137e0fc8b44859ade3063982eacd2a4/idna-3.3-py3-none-any.whl",
+                    "sha256": "84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/eb/7f/a6c278746ddbd7094b019b08d1b2187101b1f596f35f81dc27f57d8fcf7c/charset-normalizer-2.0.6.tar.gz",
-                    "sha256": "5ec46d183433dcbd0ab716f2d7f29d8dee50505b3fdb40c6b985c7c4f5a3591f"
+                    "url": "https://files.pythonhosted.org/packages/06/b3/24afc8868eba069a7f03650ac750a778862dc34941a4bebeb58706715726/charset_normalizer-2.0.12-py3-none-any.whl",
+                    "sha256": "6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6d/78/f8db8d57f520a54f0b8a438319c342c61c22759d8f9a1cd2e2180b5e5ea9/certifi-2021.5.30.tar.gz",
-                    "sha256": "2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee"
+                    "url": "https://files.pythonhosted.org/packages/37/45/946c02767aabb873146011e665728b680884cd8fe70dde973c640e45b775/certifi-2021.10.8-py2.py3-none-any.whl",
+                    "sha256": "d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e7/01/3569e0b535fb2e4a6c384bdbed00c55b9d78b5084e0fb7f4d0bf523d7670/requests-2.26.0.tar.gz",
-                    "sha256": "b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7"
+                    "url": "https://files.pythonhosted.org/packages/2d/61/08076519c80041bc0ffa1a8af0cbd3bf3e2b62af10435d269a9d0f40564d/requests-2.27.1-py2.py3-none-any.whl",
+                    "sha256": "f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c1/47/dfc9c342c9842bbe0036c7f763d2d6686bcf5eb1808ba3e170afdb282210/pyparsing-2.4.7.tar.gz",
-                    "sha256": "c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"
+                    "url": "https://files.pythonhosted.org/packages/f2/7b/84f5fe22d7d9644a5f315127659631eafff3c784202ab4e179bd724a8900/mt_940-4.23.0-py2.py3-none-any.whl",
+                    "sha256": "1f727184a12a8f289310620d9a7fbdda2737c396fb5abb356838a7d2823359b0"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/df/86/aef78bab3afd461faecf9955a6501c4999933a48394e90f03cd512aad844/packaging-21.0.tar.gz",
-                    "sha256": "7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7"
+                    "url": "https://files.pythonhosted.org/packages/35/8b/bad37525e7ef0669f013059affb3bbcd9311a24d63eda96723339ee0aab7/bleach-5.0.0-py3-none-any.whl",
+                    "sha256": "08a1fe86d253b5c88c92cc3d810fd8048a16d15762e1e5b74d502256e5926aa1"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/1c/11/86964d856e774c3594a865c0874bd86e22cad691d2e29be84b117c806c92/mt-940-4.23.0.tar.gz",
-                    "sha256": "9274bc8298b2d4b69cb3936bdcda315b50e45975789f519a237bdec58346b8d7"
+                    "url": "https://files.pythonhosted.org/packages/5e/0a/4c6db329aa1e5e6b28114b9b3752fc450093b33b843e6f482617715e8165/sepaxml-2.5.0-py3-none-any.whl",
+                    "sha256": "06d72ef9514e17e7b59cd49ca898e6aa9f2a895eef4282d03a443faea64f231d"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6a/a3/217842324374fd3fb33db0eb4c2909ccf3ecc5a94f458088ac68581f8314/bleach-4.1.0.tar.gz",
-                    "sha256": "0900d8b37eba61a802ee40ac0061f8c2b5dee29c1927dd1d233e075ebf5a71da"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/19/99/ab9a2f9c538b7db1940286b8001139a27051ef903973cf5ac4871269cb5a/sepaxml-2.4.1.tar.gz",
-                    "sha256": "1f0eddc9895cd6b18f53188787a334730eb4d7082995baf578d209efadb8bdc2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f7/99/6a8e3719e012b79e44fc54fd5f2d700da18aeb622f4900cc36f8b49cfa45/fints-3.0.1.tar.gz",
-                    "sha256": "d8a8920fb324a6a4cad2edc0a1a88a7a80b1072b5dc76af13f853ad8cbf80be7"
+                    "url": "https://files.pythonhosted.org/packages/2a/aa/ab6d86fc4a0b69ab7e3cabe951c3dde52cdb4cbda06231c38e31664c9132/fints-3.1.0-py3-none-any.whl",
+                    "sha256": "f4fb814f26d447257249c3af24f8abbb2bf2726dbbb0ee0e1ad832a9a010b487"
                 }
             ]
         },
@@ -129,13 +81,41 @@
             "name": "python3-mt-940",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"mt-940\" --no-build-isolation"
+                "pip3 install mt_940-4.23.0-py2.py3-none-any.whl"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/1c/11/86964d856e774c3594a865c0874bd86e22cad691d2e29be84b117c806c92/mt-940-4.23.0.tar.gz",
-                    "sha256": "9274bc8298b2d4b69cb3936bdcda315b50e45975789f519a237bdec58346b8d7"
+                    "url": "https://files.pythonhosted.org/packages/f2/7b/84f5fe22d7d9644a5f315127659631eafff3c784202ab4e179bd724a8900/mt_940-4.23.0-py2.py3-none-any.whl",
+                    "sha256": "1f727184a12a8f289310620d9a7fbdda2737c396fb5abb356838a7d2823359b0"
+                }
+            ]
+        },
+        {
+            "name": "python3-pycparser",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install pycparser-2.20-py2.py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/py2.py3/p/pycparser/pycparser-2.20-py2.py3-none-any.whl",
+                    "sha256": "7582ad22678f0fcd81102833f60ef8d0e57288b6b5fb00323d101be910e35705"
+                }
+            ]
+        },
+        {
+            "name": "python3-cffi",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/source/c/cffi/cffi-1.14.6.tar.gz",
+                    "sha256": "c9a875ce9d7fe32887784274dd533c57909b7b1dcadcc128a2ac21331a9765dd"
                 }
             ]
         },
@@ -143,23 +123,92 @@
             "name": "python3-cryptography",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"cryptography==3.3.2\" --no-build-isolation"
+                "pip3 install cryptography-3.4.8-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+            ],
+            "only-arches": [
+                "aarch64"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0f/86/e19659527668d70be91d0369aeaa055b4eb396b0f387a4f92293a20035bd/pycparser-2.20.tar.gz",
-                    "sha256": "2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0"
+                    "url": "https://files.pythonhosted.org/packages/cp36/c/cryptography/cryptography-3.4.8-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+                    "sha256": "34dae04a0dce5730d8eb7894eab617d8a70d0c97da76b905de9efb7128ad7085"
+                }
+            ]
+        },
+        {
+            "name": "python3-cryptography",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install cryptography-3.4.8-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+            ],
+            "only-arches": [
+                "x86_64"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/cp36/c/cryptography/cryptography-3.4.8-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "1eb7bb0df6f6f583dd8e054689def236255161ebbcf62b226454ab9ec663746b"
+                }
+            ]
+        },
+        {
+            "name": "python3-onetimepad",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install ."
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/85/15/2c9824da8742543eba7d48aafd479cf67c87e880b5a0035709d500d8447b/onetimepad-1.4.tar.gz",
+                    "sha256": "1eaade76d8036e1cb79e944b75874bfe5ee4046a571c0724564e1721565c73fd"
+                }
+            ]
+        },
+        {
+            "name": "python3-pysqlitecipher",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install pysqlitecipher-0.22-py3-none-any.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/9c/e7/c4372b322434355c28676837927d1570b77ab6fae0784135594d7dbcecc7/pysqlitecipher-0.22-py3-none-any.whl",
+                    "sha256": "a9ab8c73346559e863c5777664b32ac89ec0b04efaa469f022289e7df15a12de"
+                }
+              ]
+        },
+        {
+            "name": "python-pycountry",
+            "buildsystem": "simple",
+            "build-commands": ["python3 setup.py install --prefix=/app --root=/"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://files.pythonhosted.org/packages/87/c7/c2c76c3ae4ac79c74c1871ae775ed97b70d475dd90d1e824b1d2fc0cd54f/pycountry-18.12.8.tar.gz",
+                    "sha256": "8ec4020b2b15cd410893d573820d42ee12fe50365332e58c0975c953b60a16de"
+                }
+            ]
+        },
+        {
+            "name": "python3-schwifty",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"schwifty\""
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/32/d8/1fc7d9f5b11b4490c8a9ac9fd79efb466e142468428b71dea42d5756e257/iso3166-2.0.2-py3-none-any.whl",
+                    "sha256": "55e93c8a7587cae9479ad68c823390e33493d17d95b457271032594e5f1f7aae"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2e/92/87bb61538d7e60da8a7ec247dc048f7671afe17016cd0008b3b710012804/cffi-1.14.6.tar.gz",
-                    "sha256": "c9a875ce9d7fe32887784274dd533c57909b7b1dcadcc128a2ac21331a9765dd"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d4/85/38715448253404186029c575d559879912eb8a1c5d16ad9f25d35f7c4f4c/cryptography-3.3.2.tar.gz",
-                    "sha256": "5a60d3780149e13b7a6ff7ad6526b38846354d11a15e21068e57073e29e19bed"
+                    "url": "https://files.pythonhosted.org/packages/12/7c/3a68facb44f848a1baf23abe2770912ce70cd5e43e3b01e486578300bcec/schwifty-2022.4.2-py3-none-any.whl",
+                    "sha256": "eb4a5b9c8be9fbb6bbc387f314a29a798d67b3300fb7dc04f845aa82c1ee06cd"
                 }
             ]
         }

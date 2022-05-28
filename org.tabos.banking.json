@@ -3,7 +3,7 @@
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "42",
     "sdk" : "org.gnome.Sdk",
-    "command" : "banking",
+    "command" : "org.tabos.banking",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -23,6 +23,11 @@
         "*.la",
         "*.a"
     ],
+    "build-options" : {
+        "env" : {
+            "PIP_PREFIX" : "/app"
+        }
+    },
     "modules" : [
         "python3-requirements.json",
         {
@@ -33,8 +38,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/tabos/banking.git",
-                    "tag" : "0.4.0",
-                    "commit" : "acda95e45d015033021f91e8f6134551eac993f1"
+                    "tag" : "0.5.0",
+                    "commit" : "1e187a3d2087ba75484bb297576b0f2f9dc559a7"
                 }
             ]
         }
