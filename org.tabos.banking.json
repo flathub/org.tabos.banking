@@ -1,7 +1,7 @@
 {
     "app-id" : "org.tabos.banking",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
     "command" : "org.tabos.banking",
     "finish-args" : [
@@ -38,8 +38,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/tabos/banking.git",
-                    "tag" : "0.5.1",
-                    "commit" : "8ad34bbcbb92babc60804d62f9a7de345d3fc730"
+                    "tag" : "0.6.0",
+                    "commit" : "eb99aa7f97ac2de616755adbddb5b158a0f94657"
                 }
             ]
         }
